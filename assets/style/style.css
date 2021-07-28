@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    /* pour enlever le gros/gras des cases du formulaire qaund on clique */
+    outline: none;
+}
+
