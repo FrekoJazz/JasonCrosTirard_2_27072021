@@ -24,17 +24,18 @@
 
         <section class="section1">
             <div class="title-section1">
-                <h1>Trouver votre hebergement pour des vacances de rêve</h1>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="form">
                 <form method="POST" action="traitement.php">
-                    <a href="#">
+                    <a href="#" class="icon-map">
                         <i class="fas fa-map-marker-alt"></i>
                     </a>
                     <div>
-                        <input type="search" id="maRecherche" name="q" placeholder="Marseille,France" autofocus>
-                        <button>Rechercher</button>
+                        <input type="search" id="maRecherche" name="q" placeholder="Marseille,France" class="recherche"
+                            autofocus>
+                        <button disabled>Rechercher</button>
                     </div>
                 </form>
             </div>
@@ -42,25 +43,25 @@
                 <ul>
                     <li>Filtres</li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="icon">
                             <i class="fas fa-money-bill-wave-alt"></i>
                             <span class="texte-filtres">Économique</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="icon">
                             <i class="fas fa-child"></i>
                             <span class="texte-filtres">Famille</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="icon">
                             <i class="fas fa-heart"></i>
                             <span class="texte-filtres">Romantique</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" class="icon">
                             <i class="fas fa-dog"></i>
                             <span class="texte-filtres">Animaux autorisés</span>
                         </a>
@@ -78,10 +79,10 @@
 
     <section class="section2">
         <div class="container1">
-            <h1 id="Hébergements">Hébergement à Marseille</h1>
+            <h2 id="Hébergements">Hébergement à Marseille</h2>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Auberge La Canenebière</h2>
+                <h3>Auberge La Canenebière</h3>
                 <p>Nuit à partir de 25€</p>
                 <div class="stars">
                     <ul>
@@ -95,7 +96,7 @@
             </div>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Hôtel du port</h2>
+                <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52€</p>
                 <div class="stars">
                     <ul>
@@ -109,7 +110,7 @@
             </div>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Hôtel Les mouettes</h2>
+                <h3>Hôtel Les mouettes</h3>
                 <p>Nuit à partir de 76€</p>
                 <div class="stars">
                     <ul>
@@ -123,7 +124,7 @@
             </div>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Hôtel de la mer</h2>
+                <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46€</p>
                 <div class="stars">
                     <ul>
@@ -137,7 +138,7 @@
             </div>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Auberge Le Panier</h2>
+                <h3>Auberge Le Panier</h3>
                 <p>Nuit à partir de 23€</p>
                 <div class="stars">
                     <ul>
@@ -151,7 +152,7 @@
             </div>
             <div class="carte1">
                 <div class="img"></div>
-                <h2>Hôtel chez Amina</h2>
+                <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96€</p>
                 <div class="stars">
                     <ul>
@@ -172,12 +173,12 @@
     <section class="section3">
         <div class="container1">
             <div>
-                <h1>Les plus populaires</h1>
+                <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
             </div>
             <div class="carte2">
                 <div class="img"></div>
-                <h2>Hôtel Le soleil du matin</h2>
+                <h3>Hôtel Le soleil du matin</h3>
                 <p>Nuit à partir de 128€</p>
                 <div class="stars">
                     <ul>
@@ -191,7 +192,7 @@
             </div>
             <div class="carte2">
                 <div class="img"></div>
-                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                 <p>Nuit à partir de 71€</p>
                 <div class="stars">
                     <ul>
@@ -205,7 +206,7 @@
             </div>
             <div class="carte2">
                 <div class="img"></div>
-                <h2>Hôtel Tout bleu et Blanc</h2>
+                <h3>Hôtel Tout bleu et Blanc</h3>
                 <p>Nuit à partir de 68€</p>
                 <div class="stars">
                     <ul>
@@ -221,31 +222,31 @@
     </section>
 
     <section class="section4">
-        <h1 id="Activités">Activités</h1>
+        <h2 id="Activités">Activités à Marseille</h2>
         <div class="form-grid">
             <div class="carte3">
                 <div class="img"></div>
-                <h2>Vieux Port</h2>
+                <h3>Vieux Port</h3>
             </div>
             <div class="carte4">
                 <div class="img"></div>
-                <h2>Fort de Pomègues</h2>
+                <h3>Fort de Pomègues</h3>
             </div>
             <div class="carte5">
                 <div class="img"></div>
-                <h2>Îles de Frioul</h2>
+                <h3>Îles de Frioul</h3>
             </div>
             <div class="carte3">
                 <div class="img"></div>
-                <h2>Parc National des Calanques</h2>
+                <h3>Parc National des Calanques</h3>
             </div>
             <div class="carte6">
                 <div class="img"></div>
-                <h2>Notre-Dame-de-la-Garde</h2>
+                <h3>Notre-Dame-de-la-Garde</h3>
             </div>
             <div class="carte6">
                 <div class="img"></div>
-                <h2>Parc Longchamp</h2>
+                <h3>Parc Longchamp</h3>
             </div>
         </div>
     </section>
@@ -253,18 +254,18 @@
     <footer>
         <div class="container2">
             <div>
-                <h1>A propos</h1>
+                <h4>A propos</h4>
                 <a href="#">Fonctionnement du site</a>
                 <a href="#">Conditions génèrales de vente</a>
                 <a href="#">Données et confidentialité</a>
             </div>
             <div>
-                <h1>Nos hébergements</h1>
+                <h4>Nos hébergements</h4>
                 <a href="#">Charte qualité</a>
                 <a href="#">Soumettre votre hôtel</a>
             </div>
             <div>
-                <h1>Assistance</h1>
+                <h4>Assistance</h4>
                 <a href="#">Centre d'aide</a>
                 <a href="#">Nous contacter</a>
             </div>
