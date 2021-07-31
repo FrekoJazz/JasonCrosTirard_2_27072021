@@ -10,7 +10,7 @@
     /* pour enlever le gros/gras des cases du formulaire qaund on clique */
     outline: none;
 }
-h1, h2{
+h1, h2 {
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -27,11 +27,11 @@ p{
     margin: 5px 0;
 }
 a,
-a:visited{
+a:visited {
     color: black;
     text-decoration: none;
 }
-button{
+button {
     border: 1px solid #0065FC;
     color: white;
     background: #0065FC;
@@ -40,16 +40,129 @@ button{
     display: inline-block
     cursor: pointer;
     font: 500 0.9rem "Raleway";
-    
 }
-
-
-
+button:hover {
+    cursor: pointer;
+    opacity: 1;
+    -webkit-animation: flash 3s;
+    animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.carte1,.carte2,.carte3,.carte4,.carte5,.carte6 {
+    transition: transform .1s;
+}
+.carte1:hover,.carte2:hover,.carte3:hover,.carte4:hover,.carte5:hover,.carte6:hover {
+    transform: scale(1.1);
+}
+.icon{
+    border: 1px solid #DEEBFF;
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+}
 /* *************************************************************** */
 
-body{
+body {
     font-family: "Raleway", sans-serif;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows:repeat(4,1fr);
+    gap: 1em;
+    grid-template-areas: 
+        "1 1"              
+        "2 2"                
+        "3 4"              
+        "5 5";
+}
+
 }
 header {
-    display
+    grid-area: 1;
+    display: flex;
+    flex-direction: row;
+}
+.section1 {
+    grid-area: 1;
+
+}
+.section2 {
+    grid-area: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    
+
+}
+.container1 {
+    width: auto;
+    height: auto;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px;
+
+}
+.carte1 {
+    border: 1px solid fuchsia;
+    border-radius: 20px;
+    width: 200px;
+    height: 150px;
+    padding: 2px 2px 4px 2px;
+    margin: 5px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.imgfloat1 {
+height: ;
+
+}
+}
+.carte1 > div > ul {
+    display: flex;
+    flex-direction: row;
+}
+.section3 {
+    grid-area: 3;
+}
+.carte2 {
+    border: 1px solid fuchsia;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+
+.container2 {
+    width: 30%;
+    height: auto;
+    background: #F2F2F2;
+}
+.section4{
+    grid-area: 4;
+}
+footer {
+    grid-area: 5;
 }
