@@ -37,11 +37,11 @@ button {
     background: #0065FC;
     border-radius: 0px 12px 12px 0px;
     padding: 10px;
-    display: inline-block
-    cursor: pointer;
+    display: inline-block;
     font: 500 0.9rem "Raleway";
 }
-button:hover {
+
+/*button:hover {
     cursor: pointer;
     opacity: 1;
     -webkit-animation: flash 3s;
@@ -68,7 +68,7 @@ button:hover {
 }
 .carte1:hover,.carte2:hover,.carte3:hover,.carte4:hover,.carte5:hover,.carte6:hover {
     transform: scale(1.1);
-}
+}*/
 .icon{
     border: 1px solid #DEEBFF;
     border-radius: 50px;
@@ -79,42 +79,82 @@ button:hover {
     display: flex;
 }
 /* *************************************************************** */
-
 body {
     font-family: "Raleway", sans-serif;
-    display: grid;
-    grid-template-columns: 70% 1fr;
-    grid-template-rows:repeat(4,1fr);
-    gap: 1em;
-    grid-template-areas: 
-        "1 1"              
-        "2 2"                
-        "3 4"              
-        "5 5";
-}
-
-}
-header {
-    grid-area: 1;
-    display: flex;
-    flex-direction: row;
-}
+    margin: 0 30px;
+    }
+.header {
+    grid-area: header;
+  }
+  .nav {
+      grid-area: nav;
+  }
 .section1 {
-    grid-area: 1;
+    grid-area: section1;
+  }
+.section2 {
+    grid-area: section2;
+  }
+.section3 {
+    grid-area: section3;
+  }
+.section4 {
+    grid-area: section4;
+  }
+.footer {
+    grid-area: footer;
+  }
+  .structure {
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header nav"              
+        "section1 section1"                
+        "section2 section3"              
+        "section4 section4"
+        "footer footer";
+  }
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    height: 50px;
+    width: auto;
+}
+.nav {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 50px;
+    height: 100px;
+}
+.nav [data-active=true] {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    margin-top: 10px;
+}
+/*.section1 {
+    /*display: flex;
+    flex-direction: row;
 
 }
-.section2 {
-    grid-area: 2;
-    display: flex;
-    flex-direction: column;
+/*.section2 {
+    /*display: flex;
+    flex-direction: row;
     margin: 30px;
-    
-
+}*/
+/*.section2 .a {
+    width: 200px;
+    height: 150;
 }
 .container1 {
-    width: auto;
+    width: 100%;
     height: auto;
-    background: #F2F2F2;
+    background: #233183;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,29 +162,35 @@ header {
     padding: 20px;
 
 }
-.carte1 {
+a
+div.carte1 {
     border: 1px solid fuchsia;
     border-radius: 20px;
-    width: 200px;
-    height: 150px;
+    height: 20px;
+    width:50px;
     padding: 2px 2px 4px 2px;
     margin: 5px;
     background: white;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-}
-.imgfloat1 {
-height: ;
+    text-align: center;
+    display: table-cell;
+     vertical-align: top;
+    }
+.img1 {
+    max-height: 20%;
+    width: auto;
 
-}
+
 }
 .carte1 > div > ul {
     display: flex;
     flex-direction: row;
+}*/
+/*.section3 {
 }
-.section3 {
-    grid-area: 3;
+/*.container1{
+    width: 30%;
+    height: auto;
+    background: #F2F2F2;
 }
 .carte2 {
     border: 1px solid fuchsia;
@@ -154,15 +200,11 @@ height: ;
     margin: 5px;
     display: flex;
     flex-direction: row;
-
-.container2 {
-    width: 30%;
-    height: auto;
-    background: #F2F2F2;
-}
-.section4{
-    grid-area: 4;
+}*/
+.section4 {
+    display: flex;
+    flex-direction: row;
 }
 footer {
-    grid-area: 5;
+
 }
