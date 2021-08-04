@@ -69,19 +69,11 @@ button {
 .carte1:hover,.carte2:hover,.carte3:hover,.carte4:hover,.carte5:hover,.carte6:hover {
     transform: scale(1.1);
 }*/
-/*.icon {
-    border: 1px solid #DEEBFF;
-    border-radius: 50px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    display: inline-block;
-    display: flex;
-}
+
 /* *************************************************************** */
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0 30px;
+    margin: 0 40px;
     }
 .header {
     grid-area: header;
@@ -131,12 +123,12 @@ header {
     align-items: center;
     margin-left: 50px;
     height: 100px;
-}
-.nav [data-active=true] {
     color: #0065FC;
+}
+.nav > a:hover{
     border-top: 2px solid #0065FC;
-    margin-top: 10px;
-    line-height: 80px;
+    line-height: 100px;
+    color: #0065FC;
 }
 /******************* section1 **********************/
 .form {
@@ -185,6 +177,11 @@ header {
     border: 1px solid #DEEBFF;
     border-radius: 20px;
     margin-left: 35px;
+    cursor: pointer;
+}
+.buttonsearch:hover {
+    background: #DEEBFF;
+    transition: 0.3s;
 }
 .icon i {
     display: flex;
@@ -220,49 +217,39 @@ header {
     height: 20px;
 }
 .texte-info {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-left: 10px;
 }
 
-/*.section2 {
-    /*display: flex;
-    flex-direction: row;
-    margin: 30px;
-}*/
-/*.section2 .a {
-    width: 200px;
-    height: 150;
-}
-.container1 {
-    width: 100%;
-    height: auto;
-    background: #233183;
+.section2 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 20px;
-
+   flex-wrap: wrap;
+    background-color: rgb(238, 217, 217);
+    margin: 30px 15px 40px 0;
 }
-a
-div.carte1 {
-    border: 1px solid fuchsia;
-    border-radius: 20px;
-    height: 20px;
-    width:50px;
-    padding: 2px 2px 4px 2px;
-    margin: 5px;
-    background: white;
-    text-align: center;
-    display: table-cell;
-     vertical-align: top;
-    }
+.carte11 article {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 423.69px;
+    height: auto;
+    border: 1px solid rgb(143, 10, 10);
+}
 .img1 {
-    max-height: 20%;
-    width: auto;
-
-
+    max-width: 200px;
+    max-height: auto;
 }
+/*.grid-section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 1271.09px;
+}
+
+.carte1 a {
+    max-width: auto;
+    max-height: auto;*/
+}
+/*}
 .carte1 > div > ul {
     display: flex;
     flex-direction: row;
