@@ -12,7 +12,7 @@
 }
 h1, h2 {
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 h3{
     font-size: 0.9rem;
@@ -23,7 +23,7 @@ h4{
     font-weight: 700;
 }
 p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 10px 0;
 }
 a,
@@ -35,10 +35,11 @@ button {
     border: 1px solid #0065FC;
     color: white;
     background: #0065FC;
-    border-radius: 0px 12px 12px 0px;
+    border-radius: 0px 15px 15px 0px;
     padding: 10px;
     display: inline-block;
     font: 500 0.9rem "Raleway";
+    height: 50px;
 }
 
 /*button:hover {
@@ -99,6 +100,8 @@ body {
   .structure {
     display: grid;
     max-height: 100vh;
+    max-width: 1300px;
+    margin: auto;
     grid-template-columns: 70% 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 1.5em;
@@ -114,6 +117,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    margin: 40px 0 0 40px;
 }
 .logo {
     height: 50px;
@@ -122,20 +126,28 @@ header {
 .nav {
     display: inline-flex;
     align-items: center;
+    justify-content: space-around;
     margin-left: 50px;
-    height: 100px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    height: 80px;
     color: #0065FC;
 }
 .nav > a:hover{
     border-top: 2px solid #0065FC;
-    line-height: 100px;
+    line-height: 80px;
     color: #0065FC;
 }
 /******************* section1 **********************/
+
+.section1 {
+    margin: 0 0 0 40px;
+}
 .form {
     display: inline-flex;
     max-width: 100%;
     align-items: center;
+    line-height: 2;
  
 }
 .icon-map a {
@@ -144,9 +156,9 @@ header {
     justify-content: center;
     background: #F2F2F2;
     border: 1px solid  #F2F2F2;
-    border-radius: 10px 0 0 10px;
-    width: 35px;
-    height: 35px;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    height: 50px;
 }
 
 .label {
@@ -158,10 +170,13 @@ header {
     background: white;
     padding: 10px;
     font: 900 0.90rem "Raleway";
+    width: 230px;
+    height: 50px;
 }
 .filtres {
     display: flex;
     margin-top: 30px;
+    width: 915px;
     
 }
 .titrefiltres {
@@ -175,8 +190,8 @@ header {
     align-items: center;
     justify-content: center;
     background: white;
-    border: 1px solid #DEEBFF;
-    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 30px;
     margin-left: 35px;
     cursor: pointer;
 }
@@ -191,14 +206,14 @@ header {
     background: #DEEBFF;
     color: #0065FC;
     border: 1px solid  #DEEBFF;
-    border-radius: 20px;
-    width: 35px;
-    height: 35px;
+    border-radius: 300px;
+    width: 50px;
+    height: 50px;
 }
 .texte-filtres {
     display: flex;
     font: 900 0.9rem "Raleway";
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 .footer-section1 {
     display: flex;
@@ -234,8 +249,10 @@ header {
 .grid-section2 {
     display: grid;
     gap: 1em;
-    grid-template-columns:repeat(3,425.36px);
-    grid-row: repeat(4,1fr);
+    grid-template-columns:repeat(3,303.33px);
+    grid-row: auto;
+    align-items: center;
+    justify-items: center;
 }
 #Hébergements {
     grid-column: 1/-1;
@@ -248,28 +265,26 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 260px;
-    height: 180px;
+    height: 200px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background: white;
-    margin: 0 0 0 30px;
 }
 .img-responsive {
     object-fit: cover;
-    display: flex;
     max-width: 100%;
     height: 120px;
     border-radius: 20px 20px 0 0;
     padding: 4px 4px 10px 4px;
 }
 .text-card {
-    margin: 0 12px;
-    line-height: 8px;
+    margin: 0 20px;
+    line-height: 15px;
 }
 ul {
     display: flex;
     flex-direction: row;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     /*margin: 0 0 5px 5px;*/
     color: #0065FC;
 }
