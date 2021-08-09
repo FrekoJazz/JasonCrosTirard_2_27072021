@@ -248,11 +248,9 @@ header {
 }
 .grid-section2 {
     display: grid;
-    gap: 1em;
-    grid-template-columns:repeat(3,303.33px);
+    grid-template-columns: repeat(3,298px);
     grid-row: auto;
     align-items: center;
-    justify-items: center;
 }
 #Hébergements {
     grid-column: 1/-1;
@@ -261,14 +259,20 @@ header {
     margin: 30px 0px 0 30px;
 }
 .carte1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     max-width: 260px;
     height: 200px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background: white;
+}
+#imgcl {
+    margin: 11px 18px 11px 30px;
+}
+#imgcc {
+    margin: 11px 18px
+}
+#imgcr {
+    margin: 11px 30px 11px 18px;
 }
 .img-responsive {
     object-fit: cover;
@@ -285,23 +289,14 @@ ul {
     display: flex;
     flex-direction: row;
     font-size: 0.75rem;
-    /*margin: 0 0 5px 5px;*/
     color: #0065FC;
+    letter-spacing: 1px;
 }
-/*.grid-section2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    max-width: 1271.09px;
+.footer-section2 {
+    margin: 34px 30px;
+    font-weight: 900;
 }
 
-.carte1 a {
-    max-width: auto;
-    max-height: auto;*/
-}
-/*}
-
-}*/
 /*.section3 {
 }
 /*.container1{
@@ -322,6 +317,7 @@ ul {
     display: flex;
     flex-direction: row;
 }
+
 footer {
 
 }
