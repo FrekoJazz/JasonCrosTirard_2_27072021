@@ -82,29 +82,26 @@ button:hover {
 body {
     font-family: "Raleway", sans-serif;
     margin: 0 40px;
-    }
+}
 .header {
     grid-area: header;
-  }
-  .nav {
-      grid-area: nav;
-  }
-.section1 {
-    grid-area: section1;
-  }
-.section2 {
-    grid-area: section2;
-  }
-.section3 {
-    grid-area: section3;
-  }
-.section4 {
-    grid-area: section4;
-  }
+}
+.trouver-hebergement {
+    grid-area: trouver-hebergement;
+}
+.hebergements-a-marseillle {
+    grid-area: hebergements-a-marseillle;
+}
+.populaires {
+    grid-area: populaires;
+}
+.activités-a-marseille {
+    grid-area: activités-a-marseille;
+}
 .footer {
     grid-area: footer;
-  }
-  .structure {
+}
+.structure {
     display: grid;
     max-height: 100vh;
     max-width: 1300px;
@@ -113,39 +110,54 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 1.5em;
     grid-template-areas: 
-        "header      header"              
-        "section1   section1"                
-        "section2   section3"              
-        "section4   section4"
-        "footer     footer";
+        "header                         header"              
+        "trouver-hebergement            trouver-hebergement"                
+        "hebergements-a-marseillle      populaires"              
+        "activités-a-marseille          activités-a-marseille"
+        "footer                         footer";
   }
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . nav inscription";
+    align-items: center;
+    margin: 0px 0 0 40px;
 }
 .logo {
     display: flex;
     height: 50px;
     width: auto;
 }
-.nav {
+.nav li {
+    grid-column: 3/4;
+    grid-row: 1 / 1;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
     margin-left: 50px;
     font-size: 0.85rem;
     font-weight: bold;
-    /*height: 80px;*/
+    height: 100px;
     color: #0065FC;
 }
 .nav > a:hover{
     border-top: 2px solid #0065FC;
-    line-height: 40px;
+    line-height: 100px;
     color: #0065FC;
 }
-/******************* section1 **********************/
+.inscription {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    height: 100px;
+    color: #0065FC;
+}
+/******************* trouver-hebergement **********************/
 
-.section1 {
+.trouver-hebergement {
     margin: 0 0 0 40px;
 }
 .form {
@@ -220,7 +232,7 @@ header {
     font: 900 0.9rem "Raleway";
     margin: 10px 20px;
 }
-.footer-section1 {
+.footer-trouver-hebergement {
     display: flex;
     margin-top: 20px;
     align-items: center;
@@ -241,8 +253,8 @@ header {
     font-size: 0.8rem;
     margin-left: 10px;
 }
-/*************************** section 2 ******************************/
-.section2 {
+/*************************** hebergements-a-marseillle ******************************/
+.hebergements-a-marseillle {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
@@ -251,7 +263,7 @@ header {
     height: 600px;
     /*min-height: 400px;*/
 }
-.grid-section2 {
+.grid-hebergements-a-marseillle {
     display: grid;
     grid-template-columns: repeat(3,298px);
     grid-row: auto;
@@ -269,6 +281,7 @@ header {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     background: white;
+    justify-self: center;
 }
 #imgcl {
     margin: 11px 18px 11px 30px;
@@ -283,19 +296,19 @@ header {
     margin: 0 20px;
     line-height: 15px;
 }
-ul {
+.text-card > ul {
     display: flex;
     flex-direction: row;
     font-size: 0.75rem;
     color: #0065FC;
     letter-spacing: 1px;
 }
-.footer-section2 {
+.footer-hebergements-a-marseillle {
     margin: 34px 30px;
     font-weight: 900;
 }
 
-.section3 {
+.populaires {
 }
 .container1{
     width: 30%;
@@ -311,7 +324,7 @@ ul {
     display: flex;
     flex-direction: row;
 }
-/*.section4 {
+/*.activités-a-marseille {
     display: flex;
     flex-direction: row;
 }
