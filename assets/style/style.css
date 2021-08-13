@@ -26,13 +26,6 @@ p{
     font-size: 0.9rem;
     margin: 10px 0;
 }
-.img-cartes {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    padding: 4px 4px 10px 4px;
-    aspect-ratio: 2/1;
-}
 a,
 a:visited {
     color: black;
@@ -118,9 +111,9 @@ body {
   }
 header {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "logo . nav inscription";
+    grid-template-areas: "logo . hébergements activités inscription";
     align-items: center;
     margin: 0px 0 0 40px;
 }
@@ -130,7 +123,9 @@ header {
     width: auto;
 }
 .nav li {
-    grid-column: 3/4;
+    display: inline-flex;
+}
+.hébergements {
     grid-row: 1 / 1;
     display: inline-flex;
     justify-content: flex-end;
@@ -141,8 +136,24 @@ header {
     height: 100px;
     color: #0065FC;
 }
-.nav > a:hover{
+.activités {
+    grid-row: 1 / 1;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    height: 98px;
+    color: #0065FC;
+}
+.activités:hover{
     border-top: 2px solid #0065FC;
+    line-height: 100px;
+    color: #0065FC;
+}
+.hébergements:hover{
+    border-top: 2px groove #0065FC;
     line-height: 100px;
     color: #0065FC;
 }
@@ -153,7 +164,7 @@ header {
     font-size: 0.85rem;
     font-weight: bold;
     height: 100px;
-    color: #0065FC;
+    color: #0065FC !important;
 }
 /******************* trouver-hebergement **********************/
 
@@ -224,8 +235,8 @@ header {
     color: #0065FC;
     border: 1px solid  #DEEBFF;
     border-radius: 300px;
-    width: 50px;
-    height: 50px;
+    width: 53px;
+    height: 53px;
 }
 .texte-filtres {
     display: flex;
@@ -258,14 +269,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    margin: 30px 15px 40px 0;
+    margin: 30px 8px 40px 0;
     border-radius: 20px;
     height: 600px;
     /*min-height: 400px;*/
 }
 .grid-hebergements-a-marseillle {
     display: grid;
-    grid-template-columns: repeat(3,298px);
+    grid-template-columns: repeat(3,301px);
     grid-row: auto;
     align-items: center;
 }
@@ -282,6 +293,13 @@ header {
     border-radius: 20px;
     background: white;
     justify-self: center;
+}
+.img-cartes {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    padding: 4px 4px 10px 4px;
+    aspect-ratio: 2/1;
 }
 #imgcl {
     margin: 11px 18px 11px 30px;
@@ -307,22 +325,55 @@ header {
     margin: 34px 30px;
     font-weight: 900;
 }
+/********************************** Les plus populaires **********************************/
 
-.populaires {
-}
 .container1{
-    width: 30%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 30px 0 40px 8px;
+    border-radius: 20px;
     background: #F2F2F2;
 }
+.title-populaires {
+    display: flex;
+    margin: 36px 35px 6px;
+    align-items: center;
+    justify-content: space-between;
+}
 .carte2 {
-    border: 1px solid fuchsia;
-    width: 200px;
-    height: 150px;
-    padding: 10px;
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 332px;
+    height: auto;
+    padding: 0px;
+    margin: 15px 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: white;
+}
+.img-cartes-pop {
+    float: left;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    padding: 4px 4px 4px 4px;
+    aspect-ratio: 1/1;
+}
+.text-populaires {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 0 0 0 30px;
+}
+.text-populaires > ul {
     display: flex;
     flex-direction: row;
+    font-size: 0.75rem;
+    padding: 17px 0 0;
+    letter-spacing: 1px;
+    color: #0065FC;
 }
 /*.activités-a-marseille {
     display: flex;
