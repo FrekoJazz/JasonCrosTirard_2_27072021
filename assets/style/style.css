@@ -126,7 +126,7 @@ header {
     display: inline-flex;
 }
 .hébergements {
-    grid-row: 1 / 1;
+    grid-area: hébergements;
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
@@ -137,7 +137,7 @@ header {
     color: #0065FC;
 }
 .activités {
-    grid-row: 1 / 1;
+    grid-area: activités;
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
@@ -375,11 +375,111 @@ header {
     letter-spacing: 1px;
     color: #0065FC;
 }
-/*.activités-a-marseille {
-    display: flex;
-    flex-direction: row;
+/****************************** Activités à Marseille **************************************/
+.activités-a-marseille {
+    display: flex;    
 }
+#Activités {
 
+}
+.activité-grid {
+    width: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 45% 1fr;
+    grid-auto-flow: column;
+}
+.carte3 {
+    width: 290px;
+    height: 430px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.carte3-2 {
+    width: 290px;
+    height: 430px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.img-carte3 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    object-fit: none;
+    aspect-ratio: 3/4;
+}
+.carte4 {
+    width: 290px;
+    height: 225px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    /*grid-column: 1;
+    grid-row: 1 / span 5;*/
+}
+.img-carte4 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    aspect-ratio: 8/5;
+}
+.carte5 {
+    width: 290px;
+    height: 160px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    /*grid-column: 1;
+    grid-row: 1 / span 5;*/
+}
+.img-carte5 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 10/4;
+}
+.carte6 {
+    width: 290px;
+    height: 190px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    /*grid-column: 1;
+    grid-row: 1 / span 5;*/
+}
+.img-carte6 {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 2/1;
+}
+.carte6-2 {
+    width: 290px;
+    height: 190px;
+    /*margin: 15px 35px;*/
+    border-radius: 20px;
+    border: 1px solid rgb(247, 3, 3);
+    background: rgb(245, 3, 172);
+    /*grid-column: 1;
+    grid-row: 1 / span 5;*/
+}
 footer {
 
 }
