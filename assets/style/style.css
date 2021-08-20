@@ -322,7 +322,7 @@ header {
     border-radius: 20px;
     background: #F2F2F2;
 }
-.container1{
+.container1 {
     margin: 0 30px;
 }
 .title-populaires {
@@ -346,7 +346,7 @@ header {
 .img-cartes-pop {
     float: left;
     width: 44%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     padding: 4px 4px 4px 4px;
@@ -487,6 +487,7 @@ header {
 }
  /************************** FOOTER *****************************/
 footer {
+    display: flex;
     width: auto;
     height: 200px;
     background-color: #F2F2F2;
@@ -523,3 +524,38 @@ footer {
     line-height: 30px;
 }   
 
+@media screen and (max-width: 1850px) {
+    .structure {
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header                         header"              
+        "trouver-hebergement            trouver-hebergement"
+        "populaires                     populaires"                
+        "hebergements-a-marseillle      hebergements-a-marseillle"              
+        "activités-a-marseille          activités-a-marseille"
+        "footer                         footer";
+    }
+    .populaires {
+        display: flex;
+        height: 1260px;
+        margin: 0 40px;
+    }
+    .container1 {
+        margin: 0 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        margin: 30px 0;
+        border-radius: 20px;
+        border: 1px solid white;
+        background: white;
+        box-shadow: 0px 4px 12px rgb(0 0 0 / 10%);
+    }
+    .carte2 {
+        flex-direction: row;
+    }
+
+}
