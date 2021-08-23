@@ -277,12 +277,15 @@ header {
     display: grid;
     grid-template-columns: repeat(3,390px);
     grid-row: auto;
-    gap: 2em;
     justify-content: center;
+    gap: 2em;
+
 }
 #Hébergements {
-    margin: 30px 0px 30px 30px;
+    margin-top: 30px;
     font-weight: 900;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
 }
 .carte1 {
     width: 100%;
@@ -312,9 +315,11 @@ header {
     letter-spacing: 1px;
 }
 .footer-hebergements-a-marseillle {
-    margin: 55px 30px;
+    margin: 20px 0 40px;
     font-weight: bold;
     font-size: 1.1em;
+    grid-column: 1 / 4;
+    grid-row: 4 / 4;
 }
 /********************************** Les plus populaires **********************************/
 .populaires {
@@ -330,7 +335,7 @@ header {
 }
 .title-populaires {
     display: flex;
-    margin-top: 30px;
+    margin: 30px 0 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -573,6 +578,46 @@ footer {
     .hebergements-a-marseillle {
         margin: 40px;
     }
+    .grid-hebergements-a-marseillle {
+        grid-template-columns: 1fr repeat(3,390px) 1fr;
+    }
+    #Hébergements {
+        margin: 30px 0 0 30px;
+        grid-column: 1 / 4;
+        grid-row: 1 / 1;
+    }
+    .carte-top1 {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    .carte-top2 {
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+    }
+    .carte-center1 {
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+    }
+    .carte-center2 {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+    .carte-bottom1 {
+        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+    }
+    .carte-bottom2 {
+        grid-column: 4 / 4;
+        grid-row: 3 / 3;
+    }
+    .footer-hebergements-a-marseillle {
+        margin: 20px 0 40px 30px;
+        grid-column: 1 / 5;
+        grid-row: 4 / 4;
+    }
+    .footer-right {
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width: 1632px) {
 
@@ -604,6 +649,35 @@ footer {
     .grid-hebergements-a-marseillle {
         grid-template-columns: repeat(2,563px);
     }
+    .carte-top1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 2;
+    }
+    .carte-top2 {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    .carte-center1 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 3;
+    }
+    .carte-center2 {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+    .carte-bottom1 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 4;
+    }
+    .carte-bottom2 {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+    .footer-hebergements-a-marseillle {
+        grid-column: 1 / 4;
+        grid-row: 5 / 5;
+    }
+    
 }
 @media screen and (max-width: 1385px) {
 
@@ -644,9 +718,76 @@ footer {
                 grid-template-columns: repeat(2,563px);
             }
 }
-@media screen and (max-width: 1305px) {
+@media screen and (max-width: 1306px) {
 
-        .grid-hebergements-a-marseillle {
-            grid-template-columns: repeat(2,563px);
-        }
+    header {
+        grid-template-columns: 1fr 5fr 2fr 1fr;
+    }
 }
+@media screen and (max-width: 1286px) {
+
+    .cartes:hover {
+        transform: scaleX(1.03) scaleY(1.1);
+    }
+    .structure {
+        gap: 0em;
+      }
+      .populaires {
+        height: 880px;
+        margin: 50px 0 0;
+        border-radius: 0;
+        background: #F2F2F2;
+    }
+    .hebergements-a-marseillle {
+        background-color: #ffffff;
+        height: 3184px;
+        margin: 50px 0 0 30px;
+    }
+    .grid-hebergements-a-marseillle {
+        display: flex;
+        flex-direction: column;
+    }
+    #Hébergements {
+        margin: 30px 0 0;
+    }
+    .carte1 {
+        width: 98%;
+    }
+    .img-cartes {
+        aspect-ratio: 3/1;
+    }
+    .footer-hebergements-a-marseillle {
+        margin: 20px 0 0;
+    }
+    .activités-a-marseille {
+        height: 3040px;
+        margin: 0 30px;
+    }
+    #Activités {
+        margin: 50px 0 30px 0;
+    }
+    .activité-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-carte3 {
+        aspect-ratio: 3/1;
+    }
+    .img-carte4 {
+        aspect-ratio: 3/1;
+    }
+    .img-carte5 {
+        object-position: center;
+        aspect-ratio: 3/1;
+    }
+    .img-carte6 {
+        object-position: top;
+        aspect-ratio: 3/1;
+    }
+    .img-carte6-2 {
+        object-position: initial;
+        aspect-ratio: 3/1;
+    }
+}
+
+
