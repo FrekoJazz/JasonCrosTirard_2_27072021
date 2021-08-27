@@ -229,6 +229,9 @@ header {
     background: #DEEBFF;
     transition: 0.3s;
 }
+.desktopnone {
+    display: none;
+}
 .icon i {
     display: flex;
     align-items: center;
@@ -621,14 +624,13 @@ footer {
     .hébergements {
         font-size: 1rem;
         height: initial;
-
     }
     .hébergements:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
-        width: 100%;
         color: #0065FC;
         height: 16px;
+
     }
     .activités {
         font-size: 1rem;
@@ -661,6 +663,16 @@ footer {
     }
     .activités-a-marseille {
         margin: 0 20px;
+    }
+    button {
+        border-radius: 15px 15px;
+        width: 50px;
+    }
+    .desktopnone {
+        display: block;
+    }
+    .mobilenone {
+        display: none;
     }
     .container2 {
         display: flex;
