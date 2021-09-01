@@ -19,6 +19,7 @@
     <meta property="og:description" content="Description Here">
 
     <link rel="stylesheet" href="./assets/style/style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="shortcut icon" type="image/png" href="./assets/images/logo/Reservia%favicon.png">
 </head>
@@ -28,8 +29,8 @@
         <header class="header">
             <img class="logo" src="./assets/images/logo/Reservia@3x.png" alt="logo">
             <div class="masternav">
-                <div class="nav1"><a href="#Hébergements" class="hébergements">Hébergements</a></div>
-                <div class="nav2"><a href="#Activités" class="activités">Activités</a></div>
+                <div class="nav1"><a href="#Hébergements" class="hebergements">Hébergements</a></div>
+                <div class="nav2"><a href="#Activités" class="activites">Activités</a></div>
             </div>
             <a href="#S'inscrire" class="inscription">S'inscrire</a>
         </header>
@@ -42,7 +43,7 @@
             </div>
             <form class="form" method="POST" action="traitement.php">
                 <span class="icon-map"><a href="#">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt"><span class="sr-only">icone de localisation</span></i>
                     </a>
                 </span>
                 <div class="search">
@@ -53,28 +54,28 @@
                 </div>
             </form>
             <div class="filtres">
-                <h3 class="titrefiltres">Filtres</h3>
-                <div class="buttonsearch">
+                <div class="titrefiltres">Filtres</div>
+                <div class="buttonsearch billet">
                     <a href="#" class="icon">
-                        <i class="fas fa-money-bill-wave-alt"></i>
+                        <i class="fas fa-money-bill-wave-alt"><span class="sr-only">icone de billet de banque</span></i>
                     </a>
                     <span class="texte-filtres">Économique</span>
                 </div>
                 <div class="buttonsearch">
                     <a href="#" class="icon">
-                        <i class="fas fa-child"></i>
+                        <i class="fas fa-child"><span class="sr-only">icone d'un enfant</span></i>
                     </a>
                     <span class="texte-filtres">Familial</span>
                 </div>
                 <div class="buttonsearch">
                     <a href="#" class="icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"><span class="sr-only">icone d'un coeur</span></i>
                     </a>
                     <span class="texte-filtres">Romantique</span>
                 </div>
                 <div class="buttonsearch">
                     <a href="#" class="icon">
-                        <i class="fas fa-dog"></i>
+                        <i class="fas fa-dog"><span class="sr-only">icone d'un chien</span></i>
                     </a>
                     <span class="texte-filtres">Animaux autorisés</span>
                 </div>
@@ -219,53 +220,65 @@
                 </div>
 
                 <article class="carte2 cartes">
-                    <a href="#">
+                    <a href="#" class="grid-populaire">
                         <img src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            class="img-cartes-pop" alt="Chambre de couleur verte avec lit double">
+                            class="img-cartes-pop img-pop1" alt="Chambre de couleur verte avec lit double">
                         <div class="text-populaires">
-                            <h3>Hôtel Le soleil du matin</h3>
-                            <p>Nuit à partir de 128€</p>
-                            <ul>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                            </ul>
+                            <div class="texteprix">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                            </div>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </article>
                 <article class="carte2 cartes">
-                    <a href="#">
+                    <a href="#" class="grid-populaire">
                         <img src="./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                            class="img-cartes-pop " alt="Chambre spacieuse avec lit double">
+                            class="img-cartes-pop img-pop2" alt="Chambre spacieuse avec lit double">
                         <div class="text-populaires">
-                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                            <p>Nuit à partir de 71€</p>
-                            <ul>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="far fa-star"></i></li>
-                            </ul>
+                            <div class="texteprix">
+                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <p>Nuit à partir de 71€</p>
+                            </div>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </article>
                 <article class="carte2 cartes">
-                    <a href="#">
+                    <a href="#" class="grid-populaire">
                         <img src="./assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            class="img-cartes-pop" alt="Chambre avec lit double">
+                            class="img-cartes-pop img-pop3" alt="Chambre avec lit double">
                         <div class="text-populaires">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de 68€</p>
-                            <ul>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="fas fa-star"></i></li>
-                                <li><i class="far fa-star"></i></li>
-                            </ul>
+                            <div class="texteprix">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de 68€</p>
+                            </div>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -278,32 +291,32 @@
                 <article class="carte3 cartes">
                     <img src="./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         class="img-carte3" alt="Vue sur des bateaux">
-                    <h3 class="title-activités">Vieux Port</h3>
+                    <h3 class="title-activites">Vieux Port</h3>
                 </article>
                 <article class="carte4 cartes">
                     <img src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         class="img-carte4" alt="Fort en haut d'une colline">
-                    <h3 class="title-activités">Fort de Pomègues</h3>
+                    <h3 class="title-activites">Fort de Pomègues</h3>
                 </article>
                 <article class="carte5 cartes">
                     <img src="./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         class="img-carte5" alt="Vue sur l'îles et sur la mer">
-                    <h3 class="title-activités">Îles de Frioul</h3>
+                    <h3 class="title-activites">Îles de Frioul</h3>
                 </article>
                 <article class="carte3-2 cartes">
                     <img src="./assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         class="img-carte3" alt="Paysage avec vue sur des montagnes et sur la mer">
-                    <h3 class="title-activités">Parc National des Calanques</h3>
+                    <h3 class="title-activites">Parc National des Calanques</h3>
                 </article>
                 <article class="carte6 cartes">
                     <img src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                         class="img-carte6" alt="Notre-Dame-de-la-Garde">
-                    <h3 class="title-activités">Notre-Dame-de-la-Garde</h3>
+                    <h3 class="title-activites">Notre-Dame-de-la-Garde</h3>
                 </article>
                 <article class="carte6-2 cartes">
                     <img src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                         class="img-carte6-2" alt="Une fontaine dans le parc">
-                    <h3 class="title-activités">Parc Longchamp</h3>
+                    <h3 class="title-activites">Parc Longchamp</h3>
                 </article>
             </div>
         </section>
@@ -318,12 +331,12 @@
                 <div class="footer-center">
                     <h4>Nos hébergements</h4>
                     <a href="#">Charte qualité</a>
-                    <a href="#">Soumettre votre hôtel</a>
+                    <a href="#" class="up">Soumettre votre hôtel</a>
                 </div>
                 <div class="footer-right">
                     <h4>Assistance</h4>
                     <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
+                    <a href="#" class="up">Nous contacter</a>
                 </div>
             </div>
         </footer>
