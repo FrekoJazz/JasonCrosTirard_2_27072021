@@ -754,6 +754,9 @@ footer {
     .hebergements-a-marseillle {
         margin: 0 20px;
     }
+    #Hebergements {
+        margin-top: 0px;
+    }
     .activites-a-marseille {
         margin: 0 20px;
     }
@@ -789,5 +792,8 @@ footer {
     }
     .footer-right {
         height: initial;
+    }
+    .up {
+        margin-bottom: 0px;
     }
 }
