@@ -307,6 +307,10 @@ header {
     margin: 0 20px;
     line-height: 15px;
 }
+.text-card , h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .text-card > ul {
     display: flex;
     flex-direction: row;
