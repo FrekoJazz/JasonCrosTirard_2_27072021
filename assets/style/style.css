@@ -187,10 +187,6 @@ header {
     width: 50px;
     height: 50px;
 }
-
-.label {
-    display: none;
-}
 .recherche {
     border: 1px solid transparent;
     background: white;
@@ -520,7 +516,8 @@ footer {
     display: flex;
     width: 1440px;
     height: auto;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 15%;
 }
 .footer-left {
     display: flex;
@@ -557,6 +554,9 @@ footer {
     }
     .img-pop2 {
         aspect-ratio: 3 / 5;
+    }
+    .container2 {
+        gap: 29%;
     }
 }
 @media screen and (max-width: 1440px) {
